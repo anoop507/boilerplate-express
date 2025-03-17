@@ -10,10 +10,9 @@ require('dotenv').config()
 // console.log(process.env.MESSAGE_STYLE)
 
 app.get("/json", (req,res) => {
+    response = "Hello json";
     if (process.env.MESSAGE_STYLE==="uppercase") {
         response = "HELLO JSON";
-    } else {
-        response = "Hello json";
     }
     res.json({message: response});
 });
