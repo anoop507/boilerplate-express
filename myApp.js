@@ -1,6 +1,6 @@
 let express = require('express');
 let app = express();
-let env = require('dotenv').config()
+require('dotenv').config()
 // app.get("/", (req, res) => {
 //     // res.send('Hello Express');
 //     //  res.sendFile ( __dirname + "/views/index.html");      
