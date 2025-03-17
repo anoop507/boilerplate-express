@@ -1,6 +1,6 @@
 let express = require('express');
 let app = express();
-require('dotenv').config()
+require('dotenv').config();
 // app.get("/", (req, res) => {
 //     // res.send('Hello Express');
 //     //  res.sendFile ( __dirname + "/views/index.html");      
@@ -14,7 +14,7 @@ app.get("/json", (req,res) => {
     if (process.env.MESSAGE_STYLE==="uppercase") {
         response = "HELLO JSON";
     }
-    res.json({message: response});
+    res.json({"message": response});
 });
 
 module.exports = app;
