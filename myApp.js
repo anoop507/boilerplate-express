@@ -7,10 +7,11 @@ let env = require('dotenv').config()
 // });
 
 // app.use('/public',express.static(__dirname+'/public'));
+// console.log(process.env.MESSAGE_STYLE)
 
 app.get("/json", (req,res) => {
     if (process.env.MESSAGE_STYLE==="uppercase") {
-        response = "Hello json".toUpperCase;
+        response = "HELLO JSON";
     } else {
         response = "Hello json";
     }
