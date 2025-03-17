@@ -6,8 +6,7 @@ require('dotenv').config();
 //     //  res.sendFile ( __dirname + "/views/index.html");      
 // });
 
-// app.use('/public',express.static(__dirname+'/public'));
-// console.log(process.env.MESSAGE_STYLE)
+app.use('/public',express.static(__dirname+'/public'));
 
 app.get("/json", (req,res) => {
     response = "Hello json";
